@@ -1,5 +1,7 @@
 package conta.model;
 
+import conta.util.Cores;
+
 public class ContaPoupanca extends Conta{
 
 	private int aniversario;
@@ -20,6 +22,7 @@ public class ContaPoupanca extends Conta{
     @Override
 	public void visualizar() {
 		super.visualizar();
+		System.out.println(Cores.TEXT_YELLOW + Cores.ANSI_BLACK_BACKGROUND + "*****************************************************");
 		System.out.println("Aniversário da conta: " + this.aniversario);
 	}
     

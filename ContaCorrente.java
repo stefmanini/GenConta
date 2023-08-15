@@ -1,5 +1,7 @@
 package conta.model;
 
+import conta.util.Cores;
+
 public class ContaCorrente extends Conta{
 
 	private float limite;
@@ -33,6 +35,7 @@ public class ContaCorrente extends Conta{
     @Override
 	public void visualizar() {
 		super.visualizar();
+		System.out.println(Cores.TEXT_YELLOW + Cores.ANSI_BLACK_BACKGROUND + "*****************************************************");
 		System.out.println("Limite de Crédito: " + this.limite);
 	}
     
